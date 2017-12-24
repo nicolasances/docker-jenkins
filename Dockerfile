@@ -14,6 +14,9 @@ ENV DEBIAN_FRONTEND noninteractive
 # update dpkg repositories
 RUN apt-get update 
 
+# get the libltdl7
+RUN apt-get install -y libltdl7
+
 # install wget
 RUN apt-get install -y wget
 
